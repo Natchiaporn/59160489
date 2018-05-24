@@ -5,17 +5,16 @@ const cors = require('cors')
 const app = express()
 let contacts = [{
     name : 'Bell',
-    phonNumber : '0917174201'
-
+    phoneNumber : '0917174201'
 }]
 
 app.use(bodyParser.json())
 app.use(cors())
 
 /// TODO: Develop GET /contacts
-
-
-
+app.get('/contacts',(req,res)=>{
+    res.json(contacts)
+})
 
 /// TODO: Develop POST /contacts
 
