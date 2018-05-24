@@ -18,7 +18,8 @@ app.get('/contacts',(req,res)=>{
 
 /// TODO: Develop POST /contacts
 app.post('/contacts',(req,res)=>{
-    var newCon = req.body
+    var newContact = req.body
+    contacts.push(contacts)
 })
 
 
