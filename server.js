@@ -19,7 +19,9 @@ app.get('/contacts',(req,res)=>{
 /// TODO: Develop POST /contacts
 app.post('/contacts',(req,res)=>{
     var newContact = req.body
-    contacts.push(contacts)
+    contacts.push(newContact)
+    res.json(newContact)
+    res.status.send(contacts)
 })
 
 
